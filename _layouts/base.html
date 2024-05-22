@@ -1,0 +1,64 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="header-container">
+          <div class="header-top-left">
+            <div class="header-top-left-center" />
+            <div class="logo-background">
+              <a href="/">
+                <div style="fontSize: '30px'"">
+                  <div class='header-line-1 header-line' data-title='THELOCUS'>
+                    <h1 class='header-css'>THELOCUS</h1>
+                  </div>
+                  <div class='header-line-2 header-line' data-title='__________'>
+                    <h1 class='header-css-divider'>__________</h1>
+                  </div>
+                  <div class='header-line-3 header-line' data-title='LOUIS'>
+                    <h1 class='header-css'>LOUIS</h1>
+                  </div>
+                  <div class='header-line-4 header-line' data-title='ALRIDGE'>
+                    <h1 class='header-css header-line-4'>ALRIDGE</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header-top-right">
+            <div class="header-top-right-center" />
+          </div>
+        </div>
+      </header>
+      <!-- main container-->
+      {% if layout.render_home or layout.layout == 'base' %}
+        {% include home.html %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+      <div class="left-background" />
+      <div class="right-background" />
+      <footer>
+        <p />
+      </footer>
+      <div class="flowers" />
+      <div class="main-background" />
+      <div class="fixed-footer">
+        <div class="fixed-footer-bottom-left">
+          <div class="fixed-footer-bottom-left-center" />
+        </div>
+        <div class="fixed-footer-bottom-right">
+          <div class="fixed-footer-bottom-right-center" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

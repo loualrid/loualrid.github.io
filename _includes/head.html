@@ -1,0 +1,47 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  >
+
+  {%- capture seo_tags -%}
+    {% seo title=false %}
+  {%- endcapture -%}
+
+  <!-- Setup Open Graph image -->
+
+  {% if page.image %}
+    {% assign src = page.image.path | default: page.image %}
+
+    {% unless src contains '://' %}
+      {%- capture img_url -%}
+        {% include media-url.html src=src subpath=page.media_subpath absolute=true %}
+      {%- endcapture -%}
+
+      {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%}
+      {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
+
+      {% assign seo_tags = seo_tags | replace: old_url, new_url %}
+    {% endunless %}
+  {% endif %}
+
+  {{ seo_tags }}
+
+  <title>
+    {%- unless page.layout == 'home' -%}
+      {{ page.title | append: ' | ' }}
+    {%- endunless -%}
+    {{ site.title }}
+  </title>
+
+  <!-- Resource Hints -->
+  <link rel="manifest" href="/assets/manifest.json">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/icons.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/silver_skin.css">
+  <link rel="stylesheet" href="/assets/css/structure.css">
+  <link rel="stylesheet" media="print" href="/assets/css/desktop.css">
+  <link rel="stylesheet" media="screen" href="/assets/css/screen.css">
+</head>
