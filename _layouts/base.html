@@ -39,6 +39,15 @@ layout: compress
         </div>
       </header>
       <!-- main container-->
+      <div class="main-container">
+        {% include nav.html %}
+        <div class="page-content-wrapper">
+          <Routes location={this.props.location} />
+          <div class="content-footer">
+            <div class="wrapper" />
+          </div>
+        </div>
+      </div>
       {% if layout.render_home or layout.layout == 'base' %}
         {% include home.html %}
       {% else %}

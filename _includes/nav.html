@@ -1,0 +1,52 @@
+<div class="main-navigation">
+  <ul class="not-standard">
+    {% if layout.render_home or layout.layout == 'base' %}
+      <li style="width: 117px" class="active">
+        <a href="/">
+          <i class="icon-home" />
+          Home
+          <span class="helper1" />
+          <span class="helper2" />
+        </a>
+      </li>
+    {% else %}
+      <li style="width: 117px">
+        <a href="/">
+          <i class="icon-home" />
+          Home
+          <span class="helper1" />
+          <span class="helper2" />
+        </a>
+      </li>
+    {% endif %}
+    {% if layout.layout == 'about' %}
+      <li style="width: 117px" class="active">
+        <a href="/about_me">
+          <i class="icon-user" />
+          About Me
+          <span class="helper1" />
+          <span class="helper2" />
+        </a>
+      </li>
+    {% else %}
+      <li style="width: 117px">
+        <a href="/about_me">
+          <i class="icon-user" />
+          Home
+          <span class="helper1" />
+          <span class="helper2" />
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+<!--
+{ id: 1, style: { width: "117px" }, href: "/", icon: "home", title: "Home", active: false },
+{ id: 2, style: { width: "117px" }, href: "/about_me", icon: "user", title: "About Me", active: false },
+{ id: 3, style: { width: "117px" }, href: "/web_resume", icon: "newspaper", title: "Resume", active: false },
+{ id: 4, style: { width: "117px" }, href: "/portfolio", icon: "folder", title: "Portfolio", active: false },
+{ id: 5, style: { width: "117px" }, href: "/site_stats", icon: "chart-bar", title: "Site Stats", active: false },
+{ id: 6, style: { width: "117px" }, href: "/blog", icon: "doc", title: "Blog", active: false },
+{ id: 7, style: { width: "117px" }, href: "/contact", icon: "mail", title: "Contact", active: false },
+{ id: 8, style: { width: "117px" }, href: "/login", icon: "login", title: "Login", active: false },
+-->
