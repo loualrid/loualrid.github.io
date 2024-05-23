@@ -16,17 +16,17 @@ layout: compress
             <div class="header-top-left-center"></div>
             <div class="logo-background">
               <a href="/">
-                <div style="fontSize: '30px'"">
-                  <div class='header-line-1 header-line' data-title='THELOCUS'>
+                <div class='logo-container'>
+                  <div class='header-line-1 header-line' title='THELOCUS'>
                     <h1 class='header-css'>THELOCUS</h1>
                   </div>
-                  <div class='header-line-2 header-line' data-title='__________'>
+                  <div class='header-line-2 header-line' title='__________'>
                     <h1 class='header-css-divider'>__________</h1>
                   </div>
-                  <div class='header-line-3 header-line' data-title='LOUIS'>
+                  <div class='header-line-3 header-line' title='LOUIS'>
                     <h1 class='header-css'>LOUIS</h1>
                   </div>
-                  <div class='header-line-4 header-line' data-title='ALRIDGE'>
+                  <div class='header-line-4 header-line' title='ALRIDGE'>
                     <h1 class='header-css header-line-4'>ALRIDGE</h1>
                   </div>
                 </div>
@@ -43,11 +43,7 @@ layout: compress
         {% include nav.html %}
         <div class="page-content-wrapper">
           <div>
-            {% if layout.render_home or layout.layout == 'base' %}
-              {% include home.html %}
-            {% else %}
-              {{ content }}
-            {% endif %}
+            {% content %}
           </div>
           <div class="content-footer">
             <div class="wrapper"></div>

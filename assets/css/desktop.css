@@ -1,5 +1,9 @@
 /* header */
 
+.logo-container {
+  font-size: 30px;
+}
+
 .header-css, .header-css-divider {
   font-family: "Times New Roman", Times, serif;
   color: #000;
