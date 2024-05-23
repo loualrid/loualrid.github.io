@@ -14,7 +14,7 @@
 
 .header-line:after {
   font-family: "Times New Roman", Times, serif;
-  content: attr(data-title);
+  content: attr(styling-title);
   text-align: center;
   color: transparent;
   background: linear-gradient(179deg, #D4D4D4 20%, #A6A6A7, #DCDCDC 90%);

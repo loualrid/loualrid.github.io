@@ -17,16 +17,16 @@ layout: compress
             <div class="logo-background">
               <a href="/">
                 <div class='logo-container'>
-                  <div class='header-line-1 header-line' title='THELOCUS'>
+                  <div class='header-line-1 header-line' styling-title='THELOCUS'>
                     <h1 class='header-css'>THELOCUS</h1>
                   </div>
-                  <div class='header-line-2 header-line' title='__________'>
+                  <div class='header-line-2 header-line' styling-title='__________'>
                     <h1 class='header-css-divider'>__________</h1>
                   </div>
-                  <div class='header-line-3 header-line' title='LOUIS'>
+                  <div class='header-line-3 header-line' styling-title='LOUIS'>
                     <h1 class='header-css'>LOUIS</h1>
                   </div>
-                  <div class='header-line-4 header-line' title='ALRIDGE'>
+                  <div class='header-line-4 header-line' styling-title='ALRIDGE'>
                     <h1 class='header-css header-line-4'>ALRIDGE</h1>
                   </div>
                 </div>
@@ -43,7 +43,10 @@ layout: compress
         {% include nav.html %}
         <div class="page-content-wrapper">
           <div>
-            {% content %}
+            {% for _include in page.content_includes %}
+              {% assign _include_path = _include | append: '.html' %}
+              {% include {{ _include_path }} %}
+            {% endfor %}
           </div>
           <div class="content-footer">
             <div class="wrapper"></div>

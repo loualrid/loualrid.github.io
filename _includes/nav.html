@@ -1,6 +1,6 @@
 <div class="main-navigation">
   <ul class="not-standard">
-    {% if layout.render_home or layout.layout == 'home' %}
+    {% if layout.render_home or page.layout == 'home' %}
       <li style="width: 117px" class="active">
         <a href="/">
           <i class="icon-home"></i>
@@ -19,7 +19,7 @@
         </a>
       </li>
     {% endif %}
-    {% if layout.layout == 'about' %}
+    {% if page.title == 'About Me' %}
       <li style="width: 117px" class="active">
         <a href="/about_me">
           <i class="icon-user"></i>
