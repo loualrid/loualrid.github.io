@@ -1,14 +1,14 @@
 {
-  "short_name": "locuscorev3",
-  "name": "LocusCorev3",
+  "short_name": "thelocus",
+  "name": "thelocus",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "192x192",
+      "src": "./favicon.ico",
+      "sizes": "16x16",
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "../index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

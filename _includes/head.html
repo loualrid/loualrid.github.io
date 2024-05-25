@@ -36,7 +36,7 @@
   </title>
 
   <!-- Resource Hints -->
-  <link rel="manifest" href="{{ 'assets/css/manifest.json' | relative_url }}">
+  <link rel="manifest" href="{{ 'assets/manifest.json' | relative_url }}">
   <link rel="shortcut icon" href="{{ 'assets/favicon.ico' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/icons.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/reset.css' | relative_url }}">
@@ -45,4 +45,9 @@
   <link rel="stylesheet" media="screen and (min-width: 981px)" href="{{ 'assets/css/desktop.css' | relative_url }}">
   <link rel="stylesheet" media="screen and (max-width: 980px)" href="{{ 'assets/css/screen.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/pages.css' | relative_url }}">
+
+  {% for _script in page.script_get %}
+    {% assign _script_path = _script | append: '.js' %}
+    <script src="{{ _script_path | prepend: '/assets/javascript/pages/' | relative_url }}"></script>
+  {% endfor %}
 </head>
