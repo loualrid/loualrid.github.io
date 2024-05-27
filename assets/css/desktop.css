@@ -65,15 +65,6 @@
 
 /* general main container */
 
-/*
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-*/
-
-/* animation: App-logo-spin infinite 20s linear; */
-
 .main-background {
   background: #373635 url(/assets/images/bg.png) repeat-y center top;
   position: fixed;
@@ -108,8 +99,8 @@
   padding: 0 0 150px 0;
   position: relative;
   text-align: center;
-  transition: margin 0.5s;
-  z-index: 0
+  z-index: 0;
+  animation: header-move 3.5s
 }
 
 .header-container {
@@ -156,6 +147,7 @@
   bottom: -5px;
   width: 100%;
   z-index: -999998;
+  animation: footer-move 3.5s;
 }
 
 .fixed-footer-bottom-left {
@@ -212,6 +204,7 @@
   float: left;
   background: url(/assets/images/bg3.png) repeat-x left center;
   background-clip: content-box;
+  animation: left-bg-move 3.5s;
 }
 
 .right-background {
@@ -224,6 +217,7 @@
   float: right;
   background: url(/assets/images/bg3.png) repeat-x right center;
   background-clip: content-box;
+  animation: right-bg-move 3.5s;
 }
 
 footer {
@@ -234,11 +228,6 @@ footer {
   text-align: center;
   font-size: 12px;
   color: #fff;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 footer p {

@@ -89,6 +89,7 @@ body {
 .main-content {
   min-height: 376px;
   margin: 0 auto;
+  animation: fade-in 3s;
 }
 
 .centered {

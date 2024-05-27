@@ -1,0 +1,21 @@
+/* only run these when the user visits the home screen */
+
+@keyframes left-bg-move {
+  0%   {left: -50vw;}
+  100% {left: 0px;}
+}
+
+@keyframes right-bg-move {
+  0%   {left: 100vw;}
+  100% {left: 50vw;}
+}
+
+@keyframes header-move {
+  0%   {top: -150px;}
+  100% {top: 0px;}
+}
+
+@keyframes footer-move {
+  0%   {margin-bottom: -60px}
+  100% {margin-bottom: -5px}
+}

@@ -4,8 +4,10 @@ function handleSectionItemsState(index, className) {
     (slider, slideIndex, slideArray) => {
       if (slideArray[index] === slider && slider.classList.contains('hidden')) {
         slider.classList.remove('hidden');
+        slider.classList.add('easy-fade-in');
       } else if (!slider.classList.contains('hidden')) {
         slider.classList.add('hidden');
+        slider.classList.remove('easy-fade-in');
       }
     }
   );
