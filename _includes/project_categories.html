@@ -1,0 +1,18 @@
+{% assign cats = "" | split: ',' %}
+{% for proj in site.projects %}
+  {% for proj_cat in proj.categories %}
+    {% assign cats = cats | push: proj_cat %}
+  {% endfor %}
+{% endfor %}
+{% assign sorted_final_cats = cats | uniq | sort %}
+
+<div class="filter-tabs mixes">
+  <span>
+    <ul class="not-standard">
+      <li class="all-filter filter active">All Categories</li>
+      {% for cat in sorted_final_cats %}
+        <li class="filter cat-filter-{{ cat | slugify }}">{{ cat }}</li>
+      {% endfor %}
+    </ul>
+  </span>
+</div>

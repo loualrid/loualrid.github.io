@@ -1,0 +1,45 @@
+<article class="portfolio-item">
+  <figure style="width: 430px; height: 285px;">
+    <div class="media-slider">
+      {% for img in page.images %}
+        <div class="media-image{% if forloop.index0 != 0 %} hidden{% endif %}">
+          <a target="_blank" href="/assets/images/projects/{{ img }}.{{ page.image_types[forloop.index0] }}">
+            <img src="/assets/images/projects/{{ img }}_medium.{{ page.image_types[forloop.index0] }}" alt="{{ page.title }}">
+          </a>
+        </div>
+      {% endfor %}
+      <div class="pager" style="bottom: 5px;">
+        <div>
+          {% for img in page.images %}
+            <span class="{% if forloop.index0 == 0 %}active{% endif %}">•</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div style="margin: 0px 0px 0px 20px;">
+    <h1>{{ page.title }}</h1>
+    <dl style="margin-top: 70px; max-width: 400px;">
+      <dt>Client:</dt>
+      <dd>{{ page.client }}</dd>
+      <dt>
+        <span class="helper"></span>Role:
+      </dt>
+      <dd>{{ page.role }}</dd>
+      <dt>
+        <span class="helper"></span>Categories:
+      </dt>
+      <dd>{{ page.categories | array_to_sentence_string }}</dd>
+    </dl>
+  </div>
+  <div class="project-content">
+    {{ content }}
+  </div>
+  {% if page.link %}
+    <p class="centered" style="margin-top: 20px;">
+      <a class="button" href="{{ page.link }}">
+        <i class="icon-eye"></i>View Site
+      </a>
+    </p>
+  {% endif %}
+</article>

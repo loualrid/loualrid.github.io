@@ -2,3 +2,8 @@
 .header, .left-background, .right-background, .flowers, .main-background, .fixed-footer {
   display: none;
 }
+
+.mobile-grid {
+  margin: 0;
+  text-align: center;
+}

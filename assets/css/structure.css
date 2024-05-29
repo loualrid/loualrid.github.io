@@ -365,6 +365,7 @@ body {
   color: #757986;
 }
 
+/*
 .portfolio-item, .webgl-display {
   min-width: inherit;
   padding: 20px 30px 20px 30px;
@@ -373,6 +374,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
+*/
 
 .portfolio-item h1 {
   margin: 0 0 30px;

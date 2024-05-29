@@ -1,6 +1,5 @@
 function handleSectionItemsState(index, className) {
-  Array.prototype.forEach.call(
-    document.getElementsByClassName(className),
+  [...document.getElementsByClassName(className)].forEach(
     (slider, slideIndex, slideArray) => {
       if (slideArray[index] === slider && slider.classList.contains('hidden')) {
         slider.classList.remove('hidden');
@@ -14,16 +13,14 @@ function handleSectionItemsState(index, className) {
 }
 
 function setupLinkedSectionButtons(buttonClassName, sectionClassName) {
-  Array.prototype.forEach.call(
-    document.getElementsByClassName(buttonClassName),
+  [...document.getElementsByClassName(buttonClassName)].forEach(
     (btn, index, array) => {
       btn.addEventListener('click', () => {
         if (!btn.classList.contains('active')) {
           btn.classList.add('active');
         }
 
-        Array.prototype.forEach.call(
-          array,
+        [...array].forEach(
           (btnInner, btnInnerIndex) => {
             if (btnInnerIndex !== index && btn.classList.contains('active')) {
               btnInner.classList.remove('active');
@@ -38,8 +35,7 @@ function setupLinkedSectionButtons(buttonClassName, sectionClassName) {
 }
 
 function setupNextButtons() {
-  Array.prototype.forEach.call(
-    document.getElementsByClassName('slider-next-section-button'),
+  [...document.getElementsByClassName('slider-next-section-button')].forEach(
     (btn, index, array) => {
       btn.addEventListener('click', () => {
         let nextSectionButton = document.getElementsByClassName('slider-section-button')[index+1];

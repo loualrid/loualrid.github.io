@@ -5,29 +5,6 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
 
-  {%- capture seo_tags -%}
-    {% seo title=false %}
-  {%- endcapture -%}
-
-  <!-- Setup Open Graph image -->
-
-  {% if page.image %}
-    {% assign src = page.image.path | default: page.image %}
-
-    {% unless src contains '://' %}
-      {%- capture img_url -%}
-        {% include media-url.html src=src subpath=page.media_subpath absolute=true %}
-      {%- endcapture -%}
-
-      {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%}
-      {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
-
-      {% assign seo_tags = seo_tags | replace: old_url, new_url %}
-    {% endunless %}
-  {% endif %}
-
-  {{ seo_tags }}
-
   <title>
     {%- unless page.layout == 'home' -%}
       {{ page.title | append: ' | ' }}
@@ -47,7 +24,7 @@
     <link rel="stylesheet" href="{{ 'assets/css/home-animations.css' | relative_url }}">
   {%- endif -%}
   <link rel="stylesheet" href="{{ 'assets/css/animations.css' | relative_url }}">
-  <link rel="stylesheet" media="screen and (max-width: 980px)" href="{{ 'assets/css/screen.css' | relative_url }}">
+  <link rel="stylesheet" media="screen and (max-width: 980px)" href="{{ 'assets/css/mobile.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/pages.css' | relative_url }}">
 
   {% for _script in page.script_get %}
