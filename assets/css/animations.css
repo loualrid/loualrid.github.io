@@ -8,7 +8,6 @@
 }
 
 .shrink-fade-out {
-  /*width: 262px;*/
   animation: shrink-fade-out 1s;
 }
 
@@ -17,11 +16,11 @@
 }
 
 @keyframes shrink-fade-out {
-  0%   {opacity: 1; width: 262px;}
-  100% {opacity: 0; width: 0;}
+  0%   {opacity: 1; height: 191px;}
+  100% {opacity: 0; height: 0px;}
 }
 
 @keyframes grow-fade-in {
-  0%   {opacity: 0; width: 0;}
-  100% {opacity: 1; width: 262px;}
+  0%   {opacity: 0; height: 0px;}
+  100% {opacity: 1; height: 191px;}
 }

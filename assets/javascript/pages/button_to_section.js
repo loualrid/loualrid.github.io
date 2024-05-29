@@ -4,6 +4,8 @@ function handleSectionItemsState(index, className) {
       if (slideArray[index] === slider && slider.classList.contains('hidden')) {
         slider.classList.remove('hidden');
         slider.classList.add('easy-fade-in');
+      } else if (slideArray[index] === slider && !slider.classList.contains('hidden')) {
+        // no-op for clicking same button twice
       } else if (!slider.classList.contains('hidden')) {
         slider.classList.add('hidden');
         slider.classList.remove('easy-fade-in');
@@ -21,7 +23,7 @@ function setupLinkedSectionButtons(buttonClassName, sectionClassName) {
         }
 
         [...array].forEach(
-          (btnInner, btnInnerIndex) => {
+          (btnInner, btnInnerIndex, btnInnerArray) => {
             if (btnInnerIndex !== index && btn.classList.contains('active')) {
               btnInner.classList.remove('active');
             }

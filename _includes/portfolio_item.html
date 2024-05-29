@@ -1,25 +1,31 @@
 <article class="portfolio-item">
   <figure style="width: 430px; height: 285px;">
-    <div class="media-slider">
-      {% for img in page.images %}
-        <div class="media-image{% if forloop.index0 != 0 %} hidden{% endif %}">
-          <a target="_blank" href="/assets/images/projects/{{ img }}.{{ page.image_types[forloop.index0] }}">
-            <img src="/assets/images/projects/{{ img }}_medium.{{ page.image_types[forloop.index0] }}" alt="{{ page.title }}">
-          </a>
-        </div>
-      {% endfor %}
-      <div class="pager" style="bottom: 5px;">
-        <div>
-          {% for img in page.images %}
-            <span class="{% if forloop.index0 == 0 %}active{% endif %}">•</span>
-          {% endfor %}
+    {% if page.placeholder_image %}
+      <div class="media-slider">
+        <img src="/assets/images/projects/placeholder.jpg">
+      </div>
+    {% else %}
+      <div class="media-slider">
+        {% for img in page.images %}
+          <div class="media-image{% if forloop.index0 != 0 %} hidden{% endif %}">
+            <a target="_blank" href="/assets/images/projects/{{ img }}.{{ page.image_types[forloop.index0] }}">
+              <img src="/assets/images/projects/{{ img }}_medium.{{ page.image_types[forloop.index0] }}" alt="{{ page.title }}">
+            </a>
+          </div>
+        {% endfor %}
+        <div class="pager" style="bottom: 5px;">
+          <div>
+            {% for img in page.images %}
+              <span class="media-image-button{% if forloop.index0 == 0 %} active{% endif %}">•</span>
+            {% endfor %}
+          </div>
         </div>
       </div>
-    </div>
+    {% endif %}
   </figure>
-  <div style="margin: 0px 0px 0px 20px;">
+  <div style="margin: 0px 0px 0px 20px; max-width: 400px;">
     <h1>{{ page.title }}</h1>
-    <dl style="margin-top: 70px; max-width: 400px;">
+    <dl style="margin-top: 70px;">
       <dt>Client:</dt>
       <dd>{{ page.client }}</dd>
       <dt>
@@ -43,3 +49,7 @@
     </p>
   {% endif %}
 </article>
+
+<script>
+  setupLinkedSectionButtons('media-image-button', 'media-image');
+</script>

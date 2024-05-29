@@ -13,7 +13,11 @@
           {% endfor %}
           <li class="gallery-item active {{ cats | join: ' ' }}">
             <a href="{{ project.url }}">
-              <img src="/assets/images/projects/{{ project.images[0] }}_small.{{ project.image_types[0] }}" alt="{{ project.title }}">
+              {% if project.placeholder_image %}
+                <img src="/assets/images/projects/placeholder_small.jpg">
+              {% else %}
+                <img src="/assets/images/projects/{{ project.images[0] }}_small.{{ project.image_types[0] }}" alt="{{ project.title }}">
+              {% endif %}
               <div class="overlay"></div>
               <div class="ind-open"></div>
               <span>{{ project.title }}</span>

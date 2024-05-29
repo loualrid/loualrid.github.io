@@ -969,6 +969,7 @@ img {
 
 article {
   min-height: 500px;
+  animation: fade-in 3s;
 }
 
 code {
