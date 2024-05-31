@@ -13,7 +13,7 @@ link: https://github.com/loualrid/locuscorev3
 date: 2018-05-27
 ---
 
-The LocusCoreV3 is the current revision of this site (February 2017 onwards). The frontend remains React but the backend was rewritten in Rails from Elixir's Phoenix as I had both too much time on my hands and not enough patience to build hex packages for the features that I wanted that Phoenix didn't have.
+The LocusCoreV3 was the revision of this site from February 2017 to June 2024. The frontend was React but the backend was rewritten in Rails from Elixir's Phoenix as I had both too much time on my hands and not enough patience to build hex packages for the features that I wanted that Phoenix didn't have.
 
 - Rails 5.1.6+
     - Running Postgres on Heroku

@@ -4,7 +4,7 @@ content_includes: [portfolio_item]
 script_get:
   - button_to_section
 title: Blocks
-categories: [Ruby on Rails, Business, Politech]
+categories: [Ruby on Rails, Politech]
 client: Politech
 role: Fullstack Engineer
 images:  [blocks]
@@ -13,7 +13,7 @@ link: http://politech.io/projects/blocks
 date: 2018-05-25
 ---
 
-My work on blocks mostly revolved around the Rspec test suite. One of my main goals was to keep test coverage high and assist in debugging CI issues.
+My work on Blocks mostly revolved around the Rspec test suite. One of my main goals was to keep test coverage high and assist in debugging CI issues.
 
 I also worked on UI modules that were user facing, these were pretty much your standard jQuery + HAML fare as far as Rails apps go.
 

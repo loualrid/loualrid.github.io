@@ -42,15 +42,10 @@ layout: compress
       <div class="main-container">
         {% include nav.html %}
         <div class="page-content-wrapper">
-          <div>
-            {% for _include in page.content_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} %}
-            {% endfor %}
-          </div>
-          <div class="content-footer">
-            <div class="wrapper"></div>
-          </div>
+          {% for _include in page.content_includes %}
+            {% assign _include_path = _include | append: '.html' %}
+            {% include {{ _include_path }} %}
+          {% endfor %}
         </div>
       </div>
       <div class="left-background"></div>

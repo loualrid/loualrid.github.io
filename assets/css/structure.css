@@ -1148,6 +1148,7 @@ p, ul, ol, dl, pre, blockquote, figure, [class^=box], .alert, .tabs+.panes, .tab
 .content-footer .wrapper {
   max-width: 854px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-navigation {
