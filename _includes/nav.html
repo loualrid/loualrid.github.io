@@ -76,6 +76,25 @@
         </a>
       </li>
     {% endif %}
+    {% if page.title == 'Blog' %}
+      <li style="width: 117px" class="active">
+        <a href="/posts">
+          <i class="icon-doc"></i>
+          Blog
+          <span class="helper1"></span>
+          <span class="helper2"></span>
+        </a>
+      </li>
+    {% else %}
+      <li style="width: 117px">
+        <a href="/posts">
+          <i class="icon-doc"></i>
+          Blog
+          <span class="helper1"></span>
+          <span class="helper2"></span>
+        </a>
+      </li>
+    {% endif %}
   </ul>
 </div>
 <!--

@@ -235,3 +235,12 @@ footer p {
   margin: 40px 0;
   line-height: 1;
 }
+
+.row-mobile-sense {
+  margin-left: -34px;
+  clear: both;
+}
+
+.span6-mobile-sense {
+  width: 410px;
+}

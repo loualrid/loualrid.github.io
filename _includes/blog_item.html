@@ -1,0 +1,47 @@
+<article class="portfolio-item">
+  {% if page.images[0] != nil %}
+    <figure class="centered-box" style="width: 640px; height: 390px;">
+      <div class="media-slider">
+        {% for img in page.images %}
+          <div class="media-image{% if forloop.index0 != 0 %} hidden{% endif %}">
+            <a target="_blank" href="/assets/images/posts/{{ img }}.{{ page.image_types[forloop.index0] }}">
+              <img src="/assets/images/posts/{{ img }}_medium.{{ page.image_types[forloop.index0] }}" alt="{{ page.title }}">
+            </a>
+          </div>
+        {% endfor %}
+        <div class="pager" style="bottom: 5px;">
+          <div>
+            {% for img in page.images %}
+              <span class="media-image-button{% if forloop.index0 == 0 %} active{% endif %}">•</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </figure>
+  {% endif %}
+  <h1 class="section-heading larger">{{ page.title }}</h1>
+  <h3 class="centered">
+    On {{ page.date | date: '%B %d, %Y' }} by {{ page.author }}
+    <br>
+    Categorized Under: {{ page.categories | array_to_sentence_string }}
+  </h3>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="content-footer">
+    <div class="wrapper centered">
+      <a class="button" href="#">
+        <i class="icon-up-circled"></i>Back to Top
+      </a>
+      <a class="button" href="/posts">
+        <i class="icon-doc"></i>Back to Blog
+      </a>
+    </div>
+  </div>
+</article>
+
+{% if page.images[0] != 0 %}
+  <script>
+    setupLinkedSectionButtons('media-image-button', 'media-image');
+  </script>
+{% endif %}

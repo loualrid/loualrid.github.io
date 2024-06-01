@@ -1,0 +1,40 @@
+<div class="main-content">
+  <div class="page-content">
+    <div>
+      <h1 class="section-heading larger">Blog</h1>
+      <div class="shortcuts">
+        {% for post in paginator.posts %}
+          <div class="row">
+            <a href="{{ post.url }}">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.excerpt | strip_html | append: '...' }}</p>
+              <span class="ico">
+                <i class="icon-{{ post.icon }}"></i>
+              </span>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pagination-container">
+  <div class="pagination box-dark">
+    {% for i in (1..paginator.total_pages) %}
+      <div class="button{% if i == paginator.page %} current-page{% endif %}">
+        {% if i == 1 %}
+          <a href="/posts">{{i}}</a>
+        {% else %}
+          <a href="/posts/page{{i}}">{{i}}</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="content-footer">
+  <div class="wrapper">
+    <a class="button" href="#">
+      <i class="icon-up-circled"></i>Back to Top
+    </a>
+  </div>
+</div>
