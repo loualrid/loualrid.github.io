@@ -32,4 +32,4 @@ Upon completion of the tutorial app, I decided to dive right into my rebuild of 
 
 After grappling with Redux for a few days, I opted to attempt to build the unauthed parts of my site without it so I could at least make some progress while I learned more about React and ES6. That helped but after tinkering with component state management, and seeing how some redux examples were implemented, I realized there was not much use but to dive right in. Rather than start on my elixir-phoenix API, I instead opted to implement a json db in redux that some elements would fetch their data from. This worked well to get the basic idea / implementation of Redux down but still left a gaping hole in how I would handle the posts and projects for my site.
 
-Here's a link to [part 2](https://loualrid.github.io/posts/there-and-back-again-part-2) where I discuss how I started digging into Phoenix.
+Here's a link to [part 2](https://loualrid.github.io/2018/01/01/there-and-back-again-part-2.html) where I discuss how I started digging into Phoenix.

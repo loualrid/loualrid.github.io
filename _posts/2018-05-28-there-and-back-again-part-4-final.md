@@ -79,4 +79,4 @@ With all of that, you now have a working way of adding / deleting categories for
 
 The above nitpick and series of gotchas was one of many that I had with Elixir's ecosystem. While I appreciate the power it gives you (much less magic than Rails) a lot of that power can only be gleaned by being in the thick of it, implementing a solution to some problem. If given the opportunity, I would use the language again but not for my own personal projects.
 
-Thanks for sticking with me on this series about my experiences with Elixir and React. <!--This is the last one but if you missed any of the previous ones, they can found [here](https://thelocus.co/search_results?model=posts&category=There%20And%20Back%20Again&page=1).-->
+Thanks for sticking with me on this series about my experiences with Elixir and React. This is the last one but if you missed any of the previous ones, they can found [here](https://loualrid.github.io/tags/there-and-back-again/).
