@@ -31,4 +31,5 @@
     {% assign _script_path = _script | append: '.js' %}
     <script src="{{ _script_path | prepend: '/assets/javascript/pages/' | relative_url }}"></script>
   {% endfor %}
+  <script src="{{ 'assets/javascript/class_manip_on_mobile.js' | relative_url }}"></script>
 </head>

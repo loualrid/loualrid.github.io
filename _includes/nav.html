@@ -1,109 +1,52 @@
 <div class="main-navigation">
   <ul class="not-standard">
-    {% if layout.render_home or page.layout == 'home' %}
-      <li style="width: 117px" class="active">
-        <a href="/">
-          <i class="icon-home"></i>
-          Home
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% else %}
-      <li style="width: 117px">
-        <a href="/">
-          <i class="icon-home"></i>
-          Home
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.title == 'About Me' %}
-      <li style="width: 117px" class="active">
-        <a href="/about_me">
-          <i class="icon-user"></i>
-          About Me
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% else %}
-      <li style="width: 117px">
-        <a href="/about_me">
-          <i class="icon-user"></i>
-          About Me
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.title == 'Resume' %}
-      <li style="width: 117px" class="active">
-        <a href="/resume">
-          <i class="icon-newspaper"></i>
-          Resume
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% else %}
-      <li style="width: 117px">
-        <a href="/resume">
-          <i class="icon-newspaper"></i>
-          Resume
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.title == 'Portfolio' %}
-      <li style="width: 117px" class="active">
-        <a href="/portfolio">
-          <i class="icon-folder"></i>
-          Projects
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% else %}
-      <li style="width: 117px">
-        <a href="/portfolio">
-          <i class="icon-folder"></i>
-          Projects
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.title == 'Blog' %}
-      <li style="width: 117px" class="active">
-        <a href="/posts">
-          <i class="icon-doc"></i>
-          Blog
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% else %}
-      <li style="width: 117px">
-        <a href="/posts">
-          <i class="icon-doc"></i>
-          Blog
-          <span class="helper1"></span>
-          <span class="helper2"></span>
-        </a>
-      </li>
-    {% endif %}
+    <li style="width: 117px" {% if layout.render_home or page.layout == 'home' %} class="active"{% endif %}>
+      <a href="/">
+        <i class="icon-home"></i>
+        Home
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
+    <li style="width: 117px" {% if page.title == 'About Me' %} class="active"{% endif %}>
+      <a href="/about_me">
+        <i class="icon-user"></i>
+        About Me
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
+    <li style="width: 117px" <li style="width: 117px" {% if page.title == 'Resume' %} class="active"{% endif %}>
+      <a href="/resume">
+        <i class="icon-newspaper"></i>
+        Resume
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
+    <li style="width: 117px" {% if page.title == 'Portfolio' %} class="active"{% endif %}>
+      <a href="/portfolio">
+        <i class="icon-folder"></i>
+        Projects
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
+    <li style="width: 117px" {% if page.title == 'Blog' %} class="active"{% endif %}>
+      <a href="/posts">
+        <i class="icon-doc"></i>
+        Blog
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
+    <li style="width: 117px" {% if page.title == 'Contact' %} class="active"{% endif %}>
+      <a href="/contact">
+        <i class="icon-mail"></i>
+        Contact
+        <span class="helper1"></span>
+        <span class="helper2"></span>
+      </a>
+    </li>
   </ul>
 </div>
-<!--
-{ id: 1, style: { width: "117px" }, href: "/", icon: "home", title: "Home", active: false },
-{ id: 2, style: { width: "117px" }, href: "/about_me", icon: "user", title: "About Me", active: false },
-{ id: 3, style: { width: "117px" }, href: "/web_resume", icon: "newspaper", title: "Resume", active: false },
-{ id: 4, style: { width: "117px" }, href: "/portfolio", icon: "folder", title: "Portfolio", active: false },
-{ id: 5, style: { width: "117px" }, href: "/site_stats", icon: "chart-bar", title: "Site Stats", active: false },
-{ id: 6, style: { width: "117px" }, href: "/blog", icon: "doc", title: "Blog", active: false },
-{ id: 7, style: { width: "117px" }, href: "/contact", icon: "mail", title: "Contact", active: false },
-{ id: 8, style: { width: "117px" }, href: "/login", icon: "login", title: "Login", active: false },
--->

@@ -2,14 +2,14 @@
   <div class="page-content">
     <h1 class="section-heading larger">About Louis Alridge</h1>
     <span class="helper"></span>
-    <div class="row section">
-      <div class="span4">
+    <div class="row section pcom">
+      <div class="span4 pcom">
         <figure class="photo">
           <img src="/assets/images/profile_pic.jpg" alt="Profile pic" style="margin-bottom: -2px;">
           <span class="helper"></span>
         </figure>
       </div>
-      <div class="span8">
+      <div class="span8 pcom">
         <p>Canadian. Programmer. Artist. College Graduate. Professional. Japanese Enthusiast. Gamer. INTJ. These ten words describe my world to its fullest. They are my hopes, my reality, my drive. The picture next to this text is the man behind those ten words. Those that wish to know more can click on the details for my actual “biography”. Otherwise, this site is dedicated to what interests me. Welcome and take a look around the locus.</p>
         <br>
         <blockquote class="plain">
@@ -21,8 +21,8 @@
       <div class="items">
         <span>
           <div class="slider-section">
-            <div class="row">
-              <div class="span4">
+            <div class="row pcom">
+              <div class="span4 pcom">
                 <div class="box-light box-details">
                   <h2>Basic Personal Information</h2>
                   <dl class="details">
@@ -37,7 +37,7 @@
                   </dl>
                 </div>
               </div>
-              <div class="span4">
+              <div class="span4 pcom">
                 <h2 class="section-heading">What Interests Me
                   <span class="helper"></span>
                 </h2>
@@ -51,7 +51,7 @@
                   <li>Art (Modern, though I can definitely appreciate classics)</li>
                 </ul>
               </div>
-              <div class="span4">
+              <div class="span4 pcom">
                 <h2 class="section-heading">Tools I live by
                   <span class="helper"></span>
                 </h2>
@@ -64,7 +64,7 @@
                   <li>A mechanical keyboard</li>
                   <li>A Macbook Pro and that magical trackpad</li>
                 </ul>
-                <div class="right">
+                <div class="right scom">
                   <div class="button small slider-next-section-button" href="#">What I can do
                     <i class="icon-right-open right"></i>
                   </div>
@@ -154,7 +154,7 @@
                   </span>
                 </div>
               </div>
-              <div class="right">
+              <div class="right scom">
                 <div class="button small slider-next-section-button" href="#">What I like to talk about
                   <i class="icon-right-open right"></i>
                 </div>
@@ -165,8 +165,8 @@
         <span>
           <div class="hidden slider-section">
             <div class="box-dark">
-              <div class="cols">
-                <div class="col1of2">
+              <div class="cols pcom">
+                <div class="col1of2 pcom">
                   <h2 class="section-heading">What I like to talk about
                     <span class="helper"></span>
                   </h2>
@@ -188,7 +188,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col1of2">
+                <div class="col1of2 pcom">
                   <h2 class="section-heading">What I like to think about
                     <span class="helper"></span>
                   </h2>
@@ -208,7 +208,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="right">
+              <div class="right scom">
                 <div class="button small slider-next-section-button" href="#">What I follow
                   <i class="icon-right-open right"></i>
                 </div>
@@ -271,4 +271,5 @@
   setupLinkedSectionButtons('slider-section-button', 'slider-section');
   setupLinkedSectionButtons('small-tab-button', 'small-tab-section');
   setupNextButtons();
+  swapClassOnMobile('right', 'centered')
 </script>
