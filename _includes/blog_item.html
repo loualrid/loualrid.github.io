@@ -23,7 +23,10 @@
   <h3 class="centered">
     On {{ page.date | date: '%B %d, %Y' }} by {{ page.author }}
     <br>
-    Categorized Under: {{ page.categories | array_to_sentence_string }}
+    Categorized Under:
+    {% for tag in page.tags %}
+      <a href="/tags/{{ tag | slugify }}" style="margin-left: 5px;">{{ tag }}</a>
+    {% endfor %}
   </h3>
   <div class="post-content">
     {{ content }}

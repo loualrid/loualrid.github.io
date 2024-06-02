@@ -1,9 +1,9 @@
 <div class="main-content">
   <div class="page-content">
     <div>
-      <h1 class="section-heading larger">Blog</h1>
+      <h1 class="section-heading larger">Blog Tag Result: {{ page.tag }}</h1>
       <div class="shortcuts">
-        {% for post in paginator.posts %}
+        {% for post in site.tags[page.tag] %}
           <div class="row">
             <a href="{{ post.url }}">
               <h2>{{ post.title }}</h2>
@@ -18,21 +18,13 @@
     </div>
   </div>
 </div>
-<div class="pagination-container">
-  <div class="pagination box-dark">
-    {% for i in (1..paginator.total_pages) %}
-      {% if i == 1 %}
-        <a class="button{% if i == paginator.page %} current-page{% endif %}" href="/posts">{{i}}</a>
-      {% else %}
-        <a class="button{% if i == paginator.page %} current-page{% endif %}" href="/posts/page{{i}}">{{i}}</a>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
 <div class="content-footer">
   <div class="wrapper">
     <a class="button" href="#">
       <i class="icon-up-circled"></i>Back to Top
+    </a>
+    <a class="button" href="/posts">
+      <i class="icon-doc"></i>Back to Blog
     </a>
   </div>
 </div>

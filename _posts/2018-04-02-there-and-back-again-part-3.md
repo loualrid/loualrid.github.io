@@ -6,7 +6,7 @@ icon:   star
 date:   2018-04-02
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [React, Redux, Phoenix, Series, There and Back Again]
+tags: [React, Redux, Phoenix, Series, There and Back Again]
 images:  []
 image_types: []
 ---

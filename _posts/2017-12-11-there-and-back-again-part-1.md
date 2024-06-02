@@ -6,7 +6,7 @@ icon:   star
 date:   2017-12-11
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Ruby on Rails, Elixir, React, Redux, Phoenix, Series, There and Back Again]
+tags: [Ruby on Rails, Elixir, React, Redux, Phoenix, Series, There and Back Again]
 images:  []
 image_types: []
 ---

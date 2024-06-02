@@ -6,7 +6,7 @@ icon:   cc-by
 date:   2015-02-09
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Technology, Business, People]
+tags: [Technology, Business, People]
 images:  []
 image_types: []
 ---

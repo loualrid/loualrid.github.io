@@ -6,7 +6,7 @@ icon:   monitor
 date:   2013-10-22
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Technology, Monitors]
+tags: [Technology, Monitors]
 images:  [monitors_right, monitors_left, monitors]
 image_types: [jpg, jpg, jpg]
 ---

@@ -6,7 +6,7 @@ icon:   sound
 date:   2013-04-10
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Gaming, Meta]
+tags: [Gaming, Meta]
 images:  []
 image_types: []
 ---

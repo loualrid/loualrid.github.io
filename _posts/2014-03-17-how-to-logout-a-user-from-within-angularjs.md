@@ -6,12 +6,12 @@ icon:   link
 date:   2014-03-17
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Ruby on Rails, Angular.js, Authentication, Devise]
+tags: [Ruby on Rails, Angular.js, Authentication, Devise]
 images:  []
 image_types: []
 ---
 
-In my recent forays into AngularJS for a project I was working on, I wondered "How does one logout a user from rails<!--exc--> from within AngularJS?" I spent a few hours trying different things. 
+In my recent forays into AngularJS for a project I was working on, I wondered "How does one logout a user from rails<!--exc--> from within AngularJS?" I spent a few hours trying different things.
 
 At first, I was hoping angular's access to window.location would allow me to trigger a logout by doing:
 ```javascript

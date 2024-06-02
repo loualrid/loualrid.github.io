@@ -6,7 +6,7 @@ icon:   star
 date:   2018-01-01
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Processing.js, Authentication, React, Redux, Phoenix, Series, There and Back Again]
+tags: [Processing.js, Authentication, React, Redux, Phoenix, Series, There and Back Again]
 images:  []
 image_types: []
 ---

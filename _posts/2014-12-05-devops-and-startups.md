@@ -6,7 +6,7 @@ icon:   cloud
 date:   2014-12-05
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [DevOps, Business]
+tags: [DevOps, Business]
 images:  []
 image_types: []
 ---

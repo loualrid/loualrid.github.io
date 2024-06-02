@@ -6,7 +6,7 @@ icon:   compass
 date:   2013-11-16
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-categories: [Meta]
+tags: [Meta]
 images:  []
 image_types: []
 ---
