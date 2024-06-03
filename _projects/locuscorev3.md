@@ -9,7 +9,7 @@ client: Myself
 role: Sole Developer
 images:  [locuscore_home]
 image_types: [png]
-link: https://github.com/loualrid/locuscorev3
+link: https://github.com/TheLocusCo/locuscorev3
 date: 2018-05-27
 ---
 

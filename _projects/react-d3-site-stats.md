@@ -16,4 +16,6 @@ This was a "quick" project thrown together from my desire to learn how to use D3
 
 The code was heavily inspired by [rd3](https://github.com/tibotiber/rd3).
 
-This and all of the other code that runs thelocus.co can be found [on github](https://github.com/loualrid/locuscorev3).
+This app / page no longer exists after the old version of this site was taken down, the code still exists but is bolted onto an old version of react (16) that will most likely never see the light of day again.
+
+This and all of the other code that used to run on thelocus.co can be found [on github](https://github.com/TheLocusCo/locuscorev3).
