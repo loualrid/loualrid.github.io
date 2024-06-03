@@ -23,3 +23,13 @@ function swapClassOnMobile(targetClass, newTargetClass) {
     );
   }
 }
+
+function showOnMobile() {
+  if (window.innerWidth < 980) {
+    [...document.getElementsByClassName('som')].forEach(
+      (obj) => {
+        obj.classList.remove('hidden');
+      }
+    );
+  }
+}

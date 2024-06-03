@@ -40,66 +40,79 @@
         </div>
       </div>
     </div>
-    <div class="content-switch hom">
-      <div class="controls">
+    <div class="content-switch">
+      <div class="controls hom">
         <h2>
           <span>Contact Form Type</span>
         </h2>
         <ul class="connected-buttons">
-          <li class="filter active">Classy</li>
-          <li class="filter">Modern</li>
+          <li class="contact-filter active">Classy</li>
+          <li class="contact-filter">Modern</li>
         </ul>
       </div>
       <div class="panes">
-        <span>
-          <div class="postcard-container">
-            <div>
-              <div class="postcard">
-                <div class="contact-form">
-                  <h2>Message:</h2>
-                  <fieldset>
-                    <p>To: Louis Alridge</p>
-                    <div>
-                      <input type="text" name="name" placeholder="Your Name" value="">
-                    </div>
-                    <div>
-                      <input type="text" name="email" placeholder="Your Email Address" value="">
-                    </div>
-                  </fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message..."></textarea>
-                  <input type="submit" name="commit" class="button button-submit" value="Send">
-                  <div class="tesla-stamp stamp active"></div>
-                  <div class="davinci-stamp stamp hidden"></div>
-                  <div class="jobs-stamp stamp hidden"></div>
-                  <div class="stamp-mark"></div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact_form">
+          <div class="h-captcha centered" data-captcha="true"></div>
+          <div class="alert hidden" id="contact_result">
+          </div>
+          <input type="hidden" name="access_key" value="23f88ff1-bfc6-439f-92cf-35e9ee013cd1">
+          <span class="contact-pane hom">
+            <div class="postcard-container">
+              <div>
+                <div class="postcard">
+                  <div class="contact-form">
+                    <h2>Message:</h2>
+                    <fieldset>
+                      <p>To: Louis Alridge</p>
+                      <div>
+                        <input type="text" name="name" placeholder="Your Name" value="">
+                      </div>
+                      <div>
+                        <input type="email" name="email" placeholder="Your Email Address" value="">
+                      </div>
+                    </fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+                    <input type="submit" name="commit" class="button button-submit contact-submit" value="Send">
+                    <div class="tesla-stamp stamp active"></div>
+                    <div class="davinci-stamp stamp hidden"></div>
+                    <div class="jobs-stamp stamp hidden"></div>
+                    <div class="stamp-mark"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </span>
-        <span class="hidden">
-          <div class="box-dark">
-            <h2 class="section-heading">Let's Talk...
-              <span class="helper"></span>
-            </h2>
-            <p class="centered explanation">Contact me with this form. I'll get back to you ASAP.</p>
-            <div class="contact-form">
-              <fieldset class="centered">
-                <div class="user-data">
-                  <input type="text" name="name" placeholder="Your name" value="">
-                  <input type="text" name="email" placeholder="Your Email Address" value="">
-                </div>
-                <div class="message">
-                  <textarea name="message" placeholder="Your Message..."></textarea>
-                </div>
-                <div class="submit">
-                  <input type="submit" name="commit" class="button large" value="Send Message">
-                </div>
-              </fieldset>
+          </span>
+          <span class="contact-pane hidden som">
+            <div class="box-dark">
+              <h2 class="section-heading">Let's Talk...
+                <span class="helper"></span>
+              </h2>
+              <p class="centered explanation">Contact me with this form. I'll get back to you ASAP.</p>
+              <div class="contact-form">
+                <fieldset class="centered">
+                  <div class="user-data">
+                    <input type="text" name="name" placeholder="Your name" value="">
+                    <input type="email" name="email" placeholder="Your Email Address" value="">
+                  </div>
+                  <div class="message">
+                    <textarea name="message" placeholder="Your Message..."></textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" name="commit" class="button large contact-submit" value="Send Message">
+                  </div>
+                </fieldset>
+              </div>
             </div>
-          </div>
-        </span>
+          </span>
+        </form>
       </div>
     </div>
   </div>
 </div>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+  setupLinkedSectionButtons('contact-filter', 'contact-pane');
+  setupStampButtons();
+  showOnMobile();
+  setupContactFormSubmit();
+</script>
