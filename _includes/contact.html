@@ -53,8 +53,7 @@
       <div class="panes">
         <form action="https://api.web3forms.com/submit" method="POST" id="contact_form">
           <div class="h-captcha centered" data-captcha="true"></div>
-          <div class="alert hidden" id="contact_result">
-          </div>
+          <div class="alert hidden" id="contact_result"></div>
           <input type="hidden" name="access_key" value="23f88ff1-bfc6-439f-92cf-35e9ee013cd1">
           <span class="contact-pane hom">
             <div class="postcard-container">
@@ -65,14 +64,14 @@
                     <fieldset>
                       <p>To: Louis Alridge</p>
                       <div>
-                        <input type="text" name="name" placeholder="Your Name" value="">
+                        <input type="text" name="name-postcard" placeholder="Your Name" value="">
                       </div>
                       <div>
-                        <input type="email" name="email" placeholder="Your Email Address" value="">
+                        <input type="email" name="email-postcard" placeholder="Your Email Address" value="">
                       </div>
                     </fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message..."></textarea>
-                    <input type="submit" name="commit" class="button button-submit contact-submit" value="Send">
+                    <textarea name="message-postcard" placeholder="Your Message..."></textarea>
+                    <input type="submit" name="commit-postcard" class="button button-submit contact-submit" value="Send">
                     <div class="tesla-stamp stamp active"></div>
                     <div class="davinci-stamp stamp hidden"></div>
                     <div class="jobs-stamp stamp hidden"></div>
@@ -91,14 +90,14 @@
               <div class="contact-form">
                 <fieldset class="centered">
                   <div class="user-data">
-                    <input type="text" name="name" placeholder="Your name" value="">
-                    <input type="email" name="email" placeholder="Your Email Address" value="">
+                    <input type="text" name="name-modern" placeholder="Your name" value="">
+                    <input type="email" name="email-modern" placeholder="Your Email Address" value="">
                   </div>
                   <div class="message">
-                    <textarea name="message" placeholder="Your Message..."></textarea>
+                    <textarea name="message-modern" placeholder="Your Message..."></textarea>
                   </div>
                   <div class="submit">
-                    <input type="submit" name="commit" class="button large contact-submit" value="Send Message">
+                    <input type="submit" name="commit-modern" class="button large contact-submit" value="Send Message">
                   </div>
                 </fieldset>
               </div>

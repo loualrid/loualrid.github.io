@@ -62,8 +62,13 @@ function setupContactFormSubmit() {
       })
       .then(function () {
         form.reset();
+        [...submitButtons].forEach(
+          (btn) => {
+            btn.classList.remove('disabled');
+          }
+        );
         setTimeout(() => {
-          result.classList.add('hidden')";
+          result.classList.add('hidden');
         }, 5000);
       });
   });
