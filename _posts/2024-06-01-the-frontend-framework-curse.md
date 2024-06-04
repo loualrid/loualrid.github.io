@@ -23,4 +23,4 @@ The mid 2010s was quite the time for Javascript, web 2.0 was in full swing and n
 
 Every line of code that you write is a chain, a debt that you will have to pay back in the form of maintenance. Sometimes you can sidestep the maintenance with a refactor or rewrite but you can never escape outside of just deleting code / features so then the question becomes, what is necessary? I heard about Github Pages way back in 2015 as an option but paid it no mind as I was too deep in the complexity-for-the-sake-of-learning mindset. Why have a static site generator when you have the world at your fingertips with a strong frontend framework, API, decent enough app hosting platform and DNS? One answer is certainly cost as Github Pages is free or nearly free if you choose to deal with DNS but what actually lead me there was an escape from my own code.
 
-Keep an eye out for part 2 where I talk about my experience with Github Pages and the Jekyll "backend framework" that runs it.
+Here's a [link](https://loualrid.github.io/2024/06/03/jekyll-and-github-pages.html) to part two where I talk about my experience with Github Pages and the Jekyll "backend framework" that runs it.
