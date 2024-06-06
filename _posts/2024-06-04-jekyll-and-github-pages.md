@@ -19,4 +19,4 @@ As for the negatives... well Liquid kinda sucks. There are some neat ideas in it
 
 Still, I can't complain all that much. A distressingly large amount of my old React-heavy site's code was dedicated to the admin portion and forms to edit and maintain the various objects: users, roles, posts, projects, etc. The forms took a markdown string and saved it off to the database to be rendered as html when a visitor accessed the relevant page / context. Markdown has first class support in Jekyll and it is very nice to just be able to write posts and projects in VSCode markdown and leave it at that. No complicated auth logic for users or dependencies for directly rendering markdown as html, it just works.
 
-Keep an eye out for part 3 where I talk about my experience with going back to minimal usage of javascript after living in React-land for so long.
+Here's a [link](https://loualrid.github.io/2024/06/06/vanilla-js-and-js-frameworks.html) to part 3 where I talk about my experience with going back to minimal usage of javascript after living in React-land for so long.
