@@ -6,7 +6,7 @@ icon:   monitor
 date:   2024-06-06
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-tags: [React, Angular.js, Processing.js, Redux, Series]
+tags: [React, Angular.js, Processing.js, Redux, Series, The Path to Pages]
 images:  []
 image_types: []
 ---
@@ -19,4 +19,4 @@ Unfortunately, spending a bunch of time and effort on a part of your website tha
 
 If there was another frontend framework I really wanted to learn, a refactor would have been a good way to pick it up but as far as I know there's not any game-changers out there like the advent of React and Vue years ago. A refactor in that way would have kicked the can further down the road but to what end? Hence I decided to just go the Github Pages route which funnily enough could support a JS framework if you used that to generate a static site which is then deployed onto pages / Jekyll but why? What do you really gain other than not writing HTML directly if you use a JS framework to generate a static site?
 
-Keep an eye out for part 4 where I talk about my future plans with this site and Github Pages as a platform.
+Here's a [link](https://loualrid.github.io/2024/06/10/is-github-pages-becoming-abanadonware.html) to part 4 where I talk about my future plans with this site and Github Pages as a platform.

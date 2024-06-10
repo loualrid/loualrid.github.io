@@ -6,7 +6,7 @@ icon:   code
 date:   2024-06-01
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-tags: [Ruby on Rails, React, Redux, Jekyll, Series]
+tags: [Ruby on Rails, React, Redux, Jekyll, Series, The Path to Pages]
 images:  []
 image_types: []
 ---

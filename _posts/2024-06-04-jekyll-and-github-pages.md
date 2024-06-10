@@ -6,7 +6,7 @@ icon:   github
 date:   2024-06-04
 author: Louis Alridge
 excerpt_separator: <!--exc-->
-tags: [Ruby on Rails, React, Jekyll, Liquid, Series]
+tags: [Ruby on Rails, React, Jekyll, Liquid, Series, The Path to Pages]
 images:  []
 image_types: []
 ---
